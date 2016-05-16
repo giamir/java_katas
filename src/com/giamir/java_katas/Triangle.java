@@ -7,9 +7,15 @@ public class Triangle {
     }
 
     public void drawHorizontalLine(int length) {
-        for (int i=0; i < length; i++) {
+        for (int i = 0; i < length; i++) {
             printAsterisk();
         }
     }
 
+    public void drawVerticalLine(int length) {
+        for (int i = 0; i < length; i++) {
+            printAsterisk();
+            System.out.println();
+        }
+    }
 }
