@@ -18,4 +18,12 @@ public class Triangle {
             System.out.println();
         }
     }
+
+    public void drawRightTriangle(int length) {
+        for (int i = 1; i <= length; i++) {
+            drawHorizontalLine(i);
+            System.out.println();
+        }
+    }
+
 }
