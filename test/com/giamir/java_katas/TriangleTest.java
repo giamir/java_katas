@@ -25,4 +25,16 @@ public class TriangleTest {
         assertEquals("*", outputStream.toString());
     }
 
+    @Test
+    public void drawHorizontalLineShouldDrawALineOfNAsterisks() {
+
+        triangle.drawHorizontalLine(1);
+        assertEquals("*", outputStream.toString());
+
+        outputStream.reset();
+
+        triangle.drawHorizontalLine(8);
+        assertEquals("********", outputStream.toString());
+    }
+
 }

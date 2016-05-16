@@ -6,4 +6,10 @@ public class Triangle {
         System.out.print("*");
     }
 
+    public void drawHorizontalLine(int length) {
+        for (int i=0; i < length; i++) {
+            printAsterisk();
+        }
+    }
+
 }
