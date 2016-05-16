@@ -54,9 +54,21 @@ public class TriangleTest {
     }
 
     @Test
-    public void drawIsoscelesTriangle() {
+    public void drawIsoscelesTriangleShouldDrawACenteredTriangle() {
         triangle.drawIsoscelesTriangle(3);
         assertEquals("  *\n ***\n*****\n", outputStream.toString());
+    }
+
+    @Test
+    public void drawIsoscelesTriangleUpsideDownWithoutFirstLineShouldDrawACenteredTriangleUpsideDownWithoutFirstLine() {
+        triangle.drawIsoscelesTriangleUpsideDownWithoutFirstLine(3);
+        assertEquals(" ***\n  *\n", outputStream.toString());
+    }
+
+    @Test
+    public void drawIsoscelesTriangleWithoutLastLineShouldDrawACenteredTriangleWithoutLastLine() {
+        triangle.drawIsoscelesTriangleWithoutLastLine(3);
+        assertEquals("  *\n ***\n", outputStream.toString());
     }
 
 }

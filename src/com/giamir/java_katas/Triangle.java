@@ -27,9 +27,23 @@ public class Triangle {
     }
 
     public void drawIsoscelesTriangle(int length) {
-        for (int i = 1; i <= length; i++) {
+        drawIsoscelesTriangleWithoutLastLine(length);
+        drawHorizontalLine(baseIsoscele(length));
+        System.out.println();
+    }
+
+    public void drawIsoscelesTriangleWithoutLastLine(int length) {
+        for (int i = 1; i < length; i++) {
             drawSpaces(length - i);
-            drawHorizontalLine(2 * i - 1);
+            drawHorizontalLine(baseIsoscele(length) - 2 * (length - i));
+            System.out.println();
+        }
+    }
+
+    public void drawIsoscelesTriangleUpsideDownWithoutFirstLine(int length) {
+        for (int i = 1; i < length; i++) {
+            drawSpaces(i);
+            drawHorizontalLine(baseIsoscele(length) - 2 * i);
             System.out.println();
         }
     }
@@ -38,6 +52,10 @@ public class Triangle {
         for (int i = 0; i < length; i++) {
             System.out.print(" ");
         }
+    }
+
+    private int baseIsoscele(int heigth) {
+        return 2 * heigth - 1;
     }
 
 }

@@ -18,4 +18,10 @@ public class DiamondTest {
         System.setOut(printStream);
         diamond = new Diamond();
     }
+
+    @Test
+    public void drawDiamondShouldDrawACenteredDiamond() {
+        diamond.drawDiamond(3);
+        assertEquals("  *\n ***\n*****\n ***\n  *\n", outputStream.toString());
+    }
 }
