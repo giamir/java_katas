@@ -26,4 +26,18 @@ public class Triangle {
         }
     }
 
+    public void drawIsoscelesTriangle(int length) {
+        for (int i = 1; i <= length; i++) {
+            drawSpaces(length - i);
+            drawHorizontalLine(2 * i - 1);
+            System.out.println();
+        }
+    }
+
+    private void drawSpaces(int length) {
+        for (int i = 0; i < length; i++) {
+            System.out.print(" ");
+        }
+    }
+
 }

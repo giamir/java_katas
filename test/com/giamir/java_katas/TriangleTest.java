@@ -53,4 +53,10 @@ public class TriangleTest {
         assertEquals("*\n**\n***\n", outputStream.toString());
     }
 
+    @Test
+    public void drawIsoscelesTriangle() {
+        triangle.drawIsoscelesTriangle(3);
+        assertEquals("  *\n ***\n*****\n", outputStream.toString());
+    }
+
 }
