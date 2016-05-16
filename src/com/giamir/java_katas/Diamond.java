@@ -8,4 +8,10 @@ public class Diamond {
         triangle.drawIsoscelesTriangle(length);
         triangle.drawIsoscelesTriangleUpsideDownWithoutFirstLine(length);
     }
+
+    public void drawDiamondWithName(int length) {
+        triangle.drawIsoscelesTriangleWithoutLastLine(length);
+        System.out.println("Giamir");
+        triangle.drawIsoscelesTriangleUpsideDownWithoutFirstLine(length);
+    }
 }

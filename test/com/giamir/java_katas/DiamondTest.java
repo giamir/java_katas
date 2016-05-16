@@ -24,4 +24,10 @@ public class DiamondTest {
         diamond.drawDiamond(3);
         assertEquals("  *\n ***\n*****\n ***\n  *\n", outputStream.toString());
     }
+
+    @Test
+    public void drawDiamondWithNameShouldDrawACenteredDiamondWithName() {
+        diamond.drawDiamondWithName(3);
+        assertEquals("  *\n ***\nGiamir\n ***\n  *\n", outputStream.toString());
+    }
 }
