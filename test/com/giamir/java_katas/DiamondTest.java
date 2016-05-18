@@ -30,4 +30,5 @@ public class DiamondTest {
         diamond.drawDiamondWithName(3);
         assertEquals("  *\n ***\nGiamir\n ***\n  *\n", outputStream.toString());
     }
+
 }

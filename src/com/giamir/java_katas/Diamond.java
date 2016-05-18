@@ -14,4 +14,5 @@ public class Diamond {
         System.out.println("Giamir");
         triangle.drawIsoscelesTriangleUpsideDownWithoutFirstLine(length);
     }
+
 }
